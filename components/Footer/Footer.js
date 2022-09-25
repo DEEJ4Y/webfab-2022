@@ -77,22 +77,38 @@ export default function Footer() {
 
           <Group spacing="xs" position="right" noWrap>
             <Link passHref href="https://twitter.com/nwcsrmist">
-              <ActionIcon size="lg" radius="xl">
+              <ActionIcon
+                size="lg"
+                radius="xl"
+                aria-label="Link to Twitter Page"
+              >
                 <IconBrandTwitter size={18} stroke={1.5} />
               </ActionIcon>
             </Link>
             <Link passHref href="https://www.linkedin.com/company/nwcsrmist">
-              <ActionIcon size="lg" radius="xl">
+              <ActionIcon
+                size="lg"
+                radius="xl"
+                aria-label="Link to Linkedin Page"
+              >
                 <IconBrandLinkedin size={18} stroke={1.5} />
               </ActionIcon>
             </Link>
             <Link passHref href="mailto:nwc.srmist@gmail.com">
-              <ActionIcon size="lg" radius="xl">
+              <ActionIcon
+                size="lg"
+                radius="xl"
+                aria-label="Open mail client with email address"
+              >
                 <IconMail size={18} stroke={1.5} />
               </ActionIcon>
             </Link>
             <Link passHref href="https://www.instagram.com/nwcsrmist">
-              <ActionIcon size="lg" radius="xl">
+              <ActionIcon
+                size="lg"
+                radius="xl"
+                aria-label="Link to Instagram Page"
+              >
                 <IconBrandInstagram size={18} stroke={1.5} />
               </ActionIcon>
             </Link>

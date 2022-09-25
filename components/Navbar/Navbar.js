@@ -118,7 +118,7 @@ export default function Navbar() {
 
   return (
     <Header height={60}>
-      <Container className={classes.header}>
+      <Container className={classes.header} pl={28}>
         <Link passHref href="/">
           <a style={{ color: "black", textDecoration: "none" }}>
             <Group>
@@ -140,7 +140,8 @@ export default function Navbar() {
           onClick={toggle}
           className={classes.burger}
           size="sm"
-        />
+          aria-label="Toggle menu button"
+        ></Burger>
       </Container>
       <Drawer
         opened={opened}

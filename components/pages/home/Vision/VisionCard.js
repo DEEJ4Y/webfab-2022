@@ -16,7 +16,7 @@ export default function VisionCard({ icon, title, content, color }) {
       <Text size="lg" weight="bold">
         {title}
       </Text>
-      <Text color="dimmed">{content}</Text>
+      <Text>{content}</Text>
     </Paper>
   );
 }
