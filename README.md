@@ -1,34 +1,142 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 9xDeveloper - WebFab 2022
 
-## Getting Started
+[View the website](https://webfab-2022-frontend.vercel.app/)
 
-First, run the development server:
+This repository is my submission for the WebFab 2022 hackathon conducted by [NWC Association SRMIST](https://www.instagram.com/nwcsrmist/) and [IoT Alliance SRM](https://www.instagram.com/iotalliance.srm/).
 
-```bash
-npm run dev
-# or
-yarn dev
+## Hackathon Theme
+
+Build a website for NWC Association.
+
+[Assets](./assets) to get started.
+
+## Technologies used
+
+- [Next.js](https://nextjs.org/)
+- [Mantine UI](https://mantine.dev/)
+
+## Installation
+
+1. Clone this repository
+
+   ```sh
+   git clone https://github.com/DEEJ4Y/webfab-2022.git
+   ```
+
+2. Go to the root of this project
+
+   ```sh
+   cd webfab-2022/
+   ```
+
+3. Install the dependencies
+
+   ```sh
+   npm install
+   ```
+
+4. Start the development server
+
+   ```sh
+   npm run dev
+   ```
+
+5. Head over to [http://localhost:3000/](http://localhost:3000/) and start making changes.
+
+## Building for production
+
+Before you start, make sure to close any open next.js servers for this project.
+
+1. Run the build script
+
+   ```sh
+   npm run build
+   ```
+
+2. Test out the build
+
+   ```sh
+   npm start
+   ```
+
+3. Head over to [http://localhost:3000/](http://localhost:3000/) to check out the build.
+
+## Updating data
+
+All the team members and activities data is stored in the `📁assets/` folder.
+
+### Team members `📁assets/team.js`
+
+Each team member has an object of the follwing shape:
+
+```js
+{
+  name: "",             // Name of the member
+  imgUrl: "",           // URL for the member's image
+  department: "",       // Department/Domain of the member
+  role: "",             // Member's position in the association
+  bio: "",              // Bio of the member
+  linkedin: "",         // URL for the member's Linkedin page
+  personalWebsite: "",  // Personal URL that a member wants to share
+  github: "",           // Github profile of the member
+  group: "",            // Optional. Group that the member belongs to in the organizational heirarchy.
+},
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The team object has the following shape:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```js
+const team = {
+  facultyHeads: [
+    // team member object 1
+    // team member object 2
+    // ...
+  ],
+  boardMembers: [
+    // ...
+  ],
+  domainHeads: [
+    // ...
+  ],
+  members: {
+    events: [
+      // ...
+    ],
+    creatives: [
+      // ...
+    ],
+    technical: [
+      // ...
+    ],
+    finance: [
+      // ...
+    ],
+    sponsorship: [
+      // ...
+    ],
+  },
+};
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+#### Managing team members
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Adding a team member: To add a new team member, create a new team member object, fill in the fields, and add it to the team object in the desired location.
+- Editing a team member: To edit an existing team member, simply edit the existing team member object.
+- Deleting a team member: To delete an existing team member, remove the object from the array.
 
-## Learn More
+### Activities `📁assets/activities.js`
 
-To learn more about Next.js, take a look at the following resources:
+Activities is an array of instagram post URLs. At any point in time, the top 9 activities are displayed on the activities page.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```js
+const activities = [
+  // post url 1
+  // post url 2
+  // ...
+];
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Managing activities
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Add a post: Add the new post URL as a string to the top of the activities array.
+- Delete a post: Remove the post URL from the array.
