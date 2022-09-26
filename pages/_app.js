@@ -15,11 +15,39 @@ export default function App(props) {
           name="description"
           content="The 'Department of Networking and Communications' or NWC is a student association formed exclusively for the Specializations in Information Technology, Internet of Things, Computer Networking, Cybersecurity, and Cloud Computing of the Computer Science Engineering branch under the umbrella of 'School of Computing'."
         />
+        <meta property="image" content="/nwc-logo.png" />
+
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
         <link rel="icon" href="/favicon.png" />
+
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta
+          property="og:url"
+          content="https://webfab-2022-frontend.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="NWC Association SRM" />
+        <meta
+          property="og:description"
+          content="The 'Department of Networking and Communications' or NWC is a student association formed exclusively for the Specializations in Information Technology, Internet of Things, Computer Networking, Cybersecurity, and Cloud Computing of the Computer Science Engineering branch under the umbrella of 'School of Computing'."
+        />
+        <meta property="og:image" content="/nwc-logo.png" />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://webfab-2022-frontend.vercel.app/"
+        />
+        <meta name="twitter:title" content="NWC Association SRM" />
+        <meta
+          name="twitter:description"
+          content="The 'Department of Networking and Communications' or NWC is a student association formed exclusively for the Specializations in Information Technology, Internet of Things, Computer Networking, Cybersecurity, and Cloud Computing of the Computer Science Engineering branch under the umbrella of 'School of Computing'."
+        />
+        <meta name="twitter:image" content="/nwc-logo.png" />
       </Head>
 
       <MantineProvider
