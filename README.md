@@ -1,8 +1,28 @@
-# 9xDeveloper - WebFab 2022
+# Disqualified 😢
+
+I was disqualified from this hackathon. Apparently using Mantine was not allowed, but they didn't specify anything before the hackathon. Below is a screenshot of the rules provided to us:
+
+![WebFab 2022 rules](./public/webfab-2022-rules.jpeg)
+
+Apparently Mantine comes under
+
+> premade website templates
+
+They even said Bootstrap comes under premade website templates.
+
+I completely disagree with this, Mantine/Bootstrap and other component libraries do not count as premade website templates. There is a huge difference between piecing together styled components in the way you want and just editing a prebuilt template.
+
+I built this website by myself from scratch. Unfortunately, the rules weren't clear enough.
+
+If the rules were specified clearly before, I would have built the website using custom CSS.
+
+Waste of my time. Never going to attend any of their events ever again.
+
+## 9xDeveloper - WebFab 2022
 
 [View the website](https://webfab-2022-frontend.vercel.app/)
 
-This repository is my submission for the WebFab 2022 hackathon conducted by [NWC Association SRMIST](https://www.instagram.com/nwcsrmist/) and [IoT Alliance SRM](https://www.instagram.com/iotalliance.srm/).
+This repository was my submission for the WebFab 2022 hackathon conducted by [NWC Association SRMIST](https://www.instagram.com/nwcsrmist/) and [IoT Alliance SRM](https://www.instagram.com/iotalliance.srm/).
 
 ## Hackathon Theme
 
